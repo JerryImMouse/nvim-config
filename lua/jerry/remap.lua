@@ -41,3 +41,7 @@ vim.keymap.set('n', '<C-l>', '<C-w>l', { desc = 'Move right' })
 vim.keymap.set('n', '<leader>tr', function()
   vim.wo.relativenumber = not vim.wo.relativenumber
 end, { desc = 'Toggle relative line numbers' })
+
+-- Closing nvim
+vim.keymap.set('n', '<leader>qa', '<cmd>qa<cr>', { desc = 'Exit Nvim closing all windows' })
+vim.keymap.set('n', '<leader>q', '<cmd>q<cr>', { desc = "Close current window" })
